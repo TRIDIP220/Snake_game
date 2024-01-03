@@ -1,4 +1,4 @@
-// Game Constants & Variables
+
 let inputDir = {x: 0, y: 0}; 
 const foodSound = new Audio('music/food.mp3');
 const gameOverSound = new Audio('music/gameover.mp3');
@@ -13,10 +13,10 @@ let snakeArr = [
 
 food = {x: 6, y: 7};
 
-// Game Functions
+
 function main(ctime) {
     window.requestAnimationFrame(main);
-    // console.log(ctime)
+   
     if((ctime - lastPaintTime)/1000 < 1/speed){
         return;
     }
